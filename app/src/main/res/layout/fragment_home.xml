@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".ui.home.HomeFragment">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/arimo"
+                android:text="Global covid19 \n cases"
+                android:textAlignment="center"
+                android:textColor="#FDFD00"
+                android:layout_marginBottom="20dp"
+                android:textSize="45sp" />
+            <TextView
+                android:id="@+id/globalTotalAffectedLable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total affected"
+                android:textSize="20sp"
+                android:fontFamily="@font/arimo"
+                android:layout_marginBottom="5dp"
+                android:textColor="#fff"/>
+            <TextView
+                android:id="@+id/globalTotalAffected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="143253"
+                android:fontFamily="@font/arimo_bold"
+                android:textSize="45dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="#fff"/>
+            <TextView
+                android:id="@+id/GlobalTotalDeathLable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total death"
+                android:textSize="20sp"
+                android:fontFamily="@font/arimo"
+                android:layout_marginBottom="5dp"
+                android:textColor="#F60606"/>
+            <TextView
+                android:id="@+id/GlobalTotalDeath"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="143253"
+                android:textSize="45dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="#FD0505"/>
+            <TextView
+                android:id="@+id/GlobalTotalrecoverLable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total recoverd"
+                android:textSize="20sp"
+                android:fontFamily="@font/arimo"
+                android:layout_marginBottom="5dp"
+                android:textColor="#00FF0A"/>
+            <TextView
+                android:id="@+id/GlobalTotalrecover"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="143253"
+                android:textSize="45dp"
+                android:fontFamily="@font/arimo_bold"
+                android:layout_marginBottom="20dp"
+                android:textColor="#00FF0A"/>
+            <TextView
+                android:id="@+id/updatetime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TotaFontStyle"
+                android:text="last updatated \n wed ,31 mar 23:54:2000 pm"
+                android:textColor="#fff"
+                android:textAlignment="center"
+                />
+
+        </LinearLayout>
+    <ProgressBar
+        android:id="@+id/GlobalProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminate="true"
+     />
+</RelativeLayout>

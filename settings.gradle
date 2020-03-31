@@ -1,0 +1,2 @@
+rootProject.name='TwingCOVID-19'
+include ':app'
