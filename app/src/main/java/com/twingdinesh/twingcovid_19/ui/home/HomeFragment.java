@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -28,6 +30,7 @@ public class HomeFragment extends Fragment {
 
     TextView Globalrecover,Globalaffected,Globaldeath,updatetime;
     ProgressBar progressBar;
+    Animation translate;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -38,8 +41,9 @@ public class HomeFragment extends Fragment {
             Globaldeath=root.findViewById(R.id.GlobalTotalDeath);
             progressBar=root.findViewById(R.id.GlobalProgress);
             updatetime=root.findViewById(R.id.updatetime);
-
+            translate= AnimationUtils.loadAnimation(getActivity(),R.anim.translate);
             getdata();
+            root.setAnimation(translate);
         return root;
     }
     public String date(long milliseconds)

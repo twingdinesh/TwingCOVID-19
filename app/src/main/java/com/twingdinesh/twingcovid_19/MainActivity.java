@@ -1,9 +1,11 @@
 package com.twingdinesh.twingcovid_19;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -23,4 +25,21 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupWithNavController(navView, navController);
     }
 
+    @Override
+    public void onBackPressed() {
+        AlertDialog.Builder builder=new AlertDialog.Builder(getApplicationContext());
+        builder.setTitle("CREDITS GOD")
+                .setMessage("please stay home ")
+                .setPositiveButton("yes ", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        MainActivity.this.finish();
+                    }
+                })
+                .setNegativeButton("No",null)
+                .setCancelable(true)
+                .setIcon(R.drawable.covid);
+        AlertDialog alertDialog=builder.create();
+        alertDialog.show();
+    }
 }

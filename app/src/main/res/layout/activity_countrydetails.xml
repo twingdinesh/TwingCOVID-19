@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="200sp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:background="@drawable/detailscountrybg"
+    tools:context=".countrydetails">
+    <ProgressBar
+        android:id="@+id/countrydetailprogressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/detailcountryname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/arimo_bold"
+        android:text="india"
+        android:textColor="#000"
+        android:layout_centerHorizontal="true"
+        android:textSize="35dp" />
+
+    <TextView
+        android:id="@+id/detailtotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detailcountryname"
+        android:text="20097"
+        android:textColor="#FF0303"
+        android:textSize="35dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/detailtotal">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="45dp"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Total recoverd :"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/arimo"
+                />
+            <TextView
+                android:id="@+id/detailtotalrecoverd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="63526"
+                android:textSize="20dp"
+                android:textColor="#4D03FF"
+                android:fontFamily="@font/arimo_bold"
+                android:layout_marginTop="5dp"
+
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="45dp"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Today's cases :"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/arimo"
+                />
+            <TextView
+                android:id="@+id/detailtodaycases"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="63526"
+                android:textSize="20dp"
+                android:textColor="#4D03FF"
+                android:fontFamily="@font/arimo_bold"
+                android:layout_marginTop="5dp"
+
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="45dp"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Today's deaths :"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/arimo"
+                />
+            <TextView
+                android:id="@+id/dtodaydeath"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="63526"
+                android:textSize="20dp"
+                android:textColor="#4D03FF"
+                android:fontFamily="@font/arimo_bold"
+                android:layout_marginTop="5dp"
+
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="45dp"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Total active :"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/arimo"
+                />
+            <TextView
+                android:id="@+id/dtotalactive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="63526"
+                android:textSize="20dp"
+                android:textColor="#4D03FF"
+                android:fontFamily="@font/arimo_bold"
+                android:layout_marginTop="5dp"
+
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="45dp"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Total critcal :"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/arimo"
+                />
+            <TextView
+                android:id="@+id/dtotalcritical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="63526"
+                android:textSize="20dp"
+                android:textColor="#4D03FF"
+                android:fontFamily="@font/arimo_bold"
+                android:layout_marginTop="5dp"
+
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="45dp"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Total death :"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/arimo"
+                />
+            <TextView
+                android:id="@+id/dtotaldeath"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="63526"
+                android:textSize="20dp"
+                android:textColor="#4D03FF"
+                android:fontFamily="@font/arimo_bold"
+                android:layout_marginTop="5dp"
+
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
