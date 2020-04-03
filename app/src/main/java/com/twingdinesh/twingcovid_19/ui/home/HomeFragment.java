@@ -41,7 +41,7 @@ public class HomeFragment extends Fragment {
             Globaldeath=root.findViewById(R.id.GlobalTotalDeath);
             progressBar=root.findViewById(R.id.GlobalProgress);
             updatetime=root.findViewById(R.id.updatetime);
-            translate= AnimationUtils.loadAnimation(getActivity(),R.anim.translate);
+            translate= AnimationUtils.loadAnimation(getActivity(),R.anim.zoom);
             getdata();
             root.setAnimation(translate);
         return root;

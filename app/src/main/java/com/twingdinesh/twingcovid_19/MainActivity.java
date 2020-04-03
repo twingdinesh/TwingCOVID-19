@@ -27,19 +27,23 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        AlertDialog.Builder builder=new AlertDialog.Builder(getApplicationContext());
-        builder.setTitle("CREDITS GOD")
-                .setMessage("please stay home ")
-                .setPositiveButton("yes ", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage("Please stay home!")
+                .setTitle("CREDITS GOD")
+                .setIcon(R.drawable.covid)
+                .setCancelable(false)
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
                         MainActivity.this.finish();
                     }
                 })
-                .setNegativeButton("No",null)
-                .setCancelable(true)
-                .setIcon(R.drawable.covid);
-        AlertDialog alertDialog=builder.create();
-        alertDialog.show();
+                .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        dialog.cancel();
+                    }
+                });
+        AlertDialog alert = builder.create();
+        alert.show();
+
     }
 }

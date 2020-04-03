@@ -1,9 +1,9 @@
 package com.twingdinesh.twingcovid_19.ui.country;
 
 public class Covidcountry {
-    String mcountryname,mcases,mdeath,mtodaysdeath,mtodaycases,mrecover,mcritical,mactive;
+    String mcountryname,mcases,mdeath,mtodaysdeath,mtodaycases,mrecover,mcritical,mactive,mflags;
 
-    public Covidcountry(String mcountryname, String mcases, String mdeath, String mtodaysdeath, String mtodaycases, String mrecover, String mcritical, String mactive) {
+    public Covidcountry(String mcountryname, String mcases, String mdeath, String mtodaysdeath, String mtodaycases, String mrecover, String mcritical, String mactive, String mflags) {
         this.mcountryname = mcountryname;
         this.mcases = mcases;
         this.mdeath = mdeath;
@@ -11,7 +11,8 @@ public class Covidcountry {
         this.mtodaycases = mtodaycases;
         this.mrecover = mrecover;
         this.mcritical = mcritical;
-        this.mactive=mactive;
+        this.mactive = mactive;
+        this.mflags = mflags;
     }
 
     public String getMcountryname() {
@@ -44,5 +45,9 @@ public class Covidcountry {
 
     public String getMactive() {
         return mactive;
+    }
+
+    public String getMflags() {
+        return mflags;
     }
 }

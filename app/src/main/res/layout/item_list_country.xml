@@ -12,28 +12,35 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:divider="@color/cardview_shadow_start_color"
-
           >
-                <TextView
-                    android:id="@+id/countrytotal"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="10382"
-                    android:textSize="23sp"
-                    android:textColor="#DA1D62"
-                    style="@style/LableFontStyle"
+            <ImageView
+                android:id="@+id/flag"
+                android:layout_width="75sp"
+                android:layout_height="40sp"
+                android:textAlignment="center"
+                android:src="@drawable/covid"
                 />
             <TextView
                 android:id="@+id/countryname"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="india"
-                android:textSize="23sp"
+                android:textSize="16sp"
                 android:textColor="#000"
+                android:layout_marginLeft="8dp"
                 android:paddingLeft="8sp"
                 style="@style/TotaFontStyle"
                 />
-
+            <TextView
+                android:id="@+id/countrytotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10382"
+                android:layout_marginLeft="8dp"
+                android:textSize="16sp"
+                android:textColor="#DA1D62"
+                style="@style/LableFontStyle"
+                />
 
         </LinearLayout>
 </RelativeLayout>

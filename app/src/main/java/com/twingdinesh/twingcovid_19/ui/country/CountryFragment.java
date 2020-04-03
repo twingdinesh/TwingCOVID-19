@@ -1,11 +1,14 @@
 package com.twingdinesh.twingcovid_19.ui.country;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Parcelable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.AdapterView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -36,6 +39,7 @@ public class CountryFragment extends Fragment {
 
     RecyclerView recyclerView;
     ProgressBar progressBar;
+    Animation countryanim;
     ArrayList<Covidcountry> covidcountries;
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -45,12 +49,13 @@ public class CountryFragment extends Fragment {
         progressBar=root.findViewById(R.id.CountryProgress);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         getdata();
+        countryanim=AnimationUtils.loadAnimation(getActivity(),R.anim.righttoleft);
+        root.setAnimation(countryanim);
         return root;
     }
     public void showcountrydetails(String mccountryname,String cases,String todaycase,String death,String todaydeath,String active,String recoverd,String crititcal)
     {
         Intent intent=new Intent(getActivity(), countrydetails.class);
-//        intent.putExtra("EXTRA COVID", mcovidcountry);
         Bundle bundle=new Bundle();
         bundle.putString("countryname",mccountryname);
         bundle.putString("cases",cases);
@@ -75,11 +80,14 @@ public class CountryFragment extends Fragment {
                     for(int i=0;i<jsonArray.length();i++)
                     {
                         JSONObject jsonObject= jsonArray.getJSONObject(i);
+                        JSONObject object=jsonObject.getJSONObject("countryInfo");
                         covidcountries.add(new Covidcountry(jsonObject.getString( "country"),jsonObject.getString("cases"),jsonObject.getString("deaths"),
-                                jsonObject.getString("todayDeaths"),jsonObject.getString("todayCases"),jsonObject.getString("recovered"),jsonObject.getString("critical"),jsonObject.getString("active")));
+                                jsonObject.getString("todayDeaths"),jsonObject.getString("todayCases"),jsonObject.getString("recovered"),jsonObject.getString("critical"),jsonObject.getString("active"),object.getString("flag")));
 
                     }
-                    CovidCountryAdaptor countryAdaptor=new CovidCountryAdaptor(covidcountries);
+                    CovidCountryAdaptor countryAdaptor=new CovidCountryAdaptor(covidcountries,getActivity());
+
+
                     recyclerView.setAdapter(countryAdaptor);
                     ItemClickSupport.addTo(recyclerView).setOnItemClickListener(new ItemClickSupport.OnItemClickListener() {
                         @Override
@@ -105,3 +113,4 @@ public class CountryFragment extends Fragment {
     }
 
 }
+

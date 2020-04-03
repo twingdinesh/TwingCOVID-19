@@ -5,15 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingTop="200sp"
-    android:paddingLeft="5dp"
-    android:paddingRight="5dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
     android:background="@drawable/detailscountrybg"
     tools:context=".countrydetails">
-    <ProgressBar
-        android:id="@+id/countrydetailprogressbar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"/>
+
 
     <TextView
         android:id="@+id/detailcountryname"
@@ -44,9 +40,9 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingRight="45dp"
             android:layout_marginTop="5dp">
             <TextView
+                android:id="@+id/totalrecoverdlable"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
@@ -72,9 +68,9 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingRight="45dp"
             android:layout_marginTop="5dp">
             <TextView
+                android:id="@+id/lable2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
@@ -100,9 +96,9 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingRight="45dp"
             android:layout_marginTop="5dp">
             <TextView
+                android:id="@+id/lable3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
@@ -128,9 +124,9 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingRight="45dp"
             android:layout_marginTop="5dp">
             <TextView
+                android:id="@+id/lable4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
@@ -156,9 +152,9 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingRight="45dp"
             android:layout_marginTop="5dp">
             <TextView
+                android:id="@+id/lable5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
@@ -184,9 +180,9 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingRight="45dp"
             android:layout_marginTop="5dp">
             <TextView
+                android:id="@+id/lable6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
