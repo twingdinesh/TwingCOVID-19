@@ -14,10 +14,9 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
+
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProviders;
+
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -26,6 +25,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+
 import com.twingdinesh.twingcovid_19.R;
 import com.twingdinesh.twingcovid_19.countrydetails;
 
@@ -41,6 +41,7 @@ public class CountryFragment extends Fragment {
     ProgressBar progressBar;
     Animation countryanim;
     ArrayList<Covidcountry> covidcountries;
+
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
@@ -93,6 +94,8 @@ public class CountryFragment extends Fragment {
                         @Override
                         public void onItemClicked(RecyclerView recyclerView, int position, View v) {
                             Covidcountry covid=covidcountries.get(position);
+
+
                             showcountrydetails(covid.getMcountryname(),covid.getMcases(),covid.getMtodaycases(),covid.getMdeath()
                             ,covid.getMtodaysdeath(), covid.getMactive(),covid.getMrecover(),covid.getMcritical());
 
