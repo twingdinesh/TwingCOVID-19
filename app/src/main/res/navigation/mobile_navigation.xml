@@ -22,5 +22,10 @@
         android:label="FAQ"
         tools:layout="@layout/f_a_q_fragment"
         />
-
+    <fragment
+        android:id="@+id/navigation_safety"
+        android:name="com.twingdinesh.twingcovid_19.ui.safty.safty"
+        android:label="safety"
+        tools:layout="@layout/fragment_safty"
+        />
 </navigation>

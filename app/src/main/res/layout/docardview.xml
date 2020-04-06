@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="8sp"
+    app:cardCornerRadius="8sp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="#F1FBF1"
+    >
+
+    <TextView
+        android:id="@+id/dotext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="jaksdjifnmweiuorabvn'wurabsdjkj adfwe f  jewiofnasdkncewf i sdfnlk sf eis auie"
+        android:textSize="16sp"
+        android:textColor="#51AA58"
+        android:padding="8sp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/alice"
+        android:textAlignment="center"/>
+
+
+</androidx.cardview.widget.CardView>

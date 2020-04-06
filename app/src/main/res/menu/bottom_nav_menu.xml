@@ -12,7 +12,11 @@
         android:title="@string/title_country" />
     <item
         android:id="@+id/navigation_faq"
-        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:icon="@drawable/faq"
         android:title="FAQ" />
+    <item
+        android:id="@+id/navigation_safety"
+        android:icon="@drawable/safety"
+        android:title="safety" />
 
 </menu>
