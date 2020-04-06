@@ -29,7 +29,7 @@
                 android:textColor="#000"
                 android:layout_marginLeft="8dp"
                 android:paddingLeft="8sp"
-                style="@style/TotaFontStyle"
+                android:fontFamily="@font/alice"
                 />
             <TextView
                 android:id="@+id/countrytotal"

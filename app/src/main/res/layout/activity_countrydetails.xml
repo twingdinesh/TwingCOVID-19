@@ -15,7 +15,7 @@
         android:id="@+id/detailcountryname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/arimo_bold"
+        android:fontFamily="@font/alice"
         android:text="india"
         android:textColor="#000"
         android:layout_centerHorizontal="true"
@@ -29,14 +29,18 @@
         android:text="20097"
         android:textColor="#FF0303"
         android:textSize="35dp"
+        android:fontFamily="@font/alice"
         android:layout_centerHorizontal="true"
         />
-
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/detailtotal">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_below="@+id/detailtotal">
+      >
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -50,7 +54,7 @@
                 android:textSize="20dp"
                 android:textColor="#000"
                 android:layout_marginTop="5dp"
-                android:fontFamily="@font/arimo"
+                android:fontFamily="@font/alice"
                 />
             <TextView
                 android:id="@+id/detailtotalrecoverd"
@@ -60,7 +64,7 @@
                 android:text="63526"
                 android:textSize="20dp"
                 android:textColor="#4D03FF"
-                android:fontFamily="@font/arimo_bold"
+                android:fontFamily="@font/alice"
                 android:layout_marginTop="5dp"
 
                 />
@@ -78,7 +82,7 @@
                 android:textSize="20dp"
                 android:textColor="#000"
                 android:layout_marginTop="5dp"
-                android:fontFamily="@font/arimo"
+                android:fontFamily="@font/alice"
                 />
             <TextView
                 android:id="@+id/detailtodaycases"
@@ -88,7 +92,7 @@
                 android:text="63526"
                 android:textSize="20dp"
                 android:textColor="#4D03FF"
-                android:fontFamily="@font/arimo_bold"
+                android:fontFamily="@font/alice"
                 android:layout_marginTop="5dp"
 
                 />
@@ -106,7 +110,7 @@
                 android:textSize="20dp"
                 android:textColor="#000"
                 android:layout_marginTop="5dp"
-                android:fontFamily="@font/arimo"
+                android:fontFamily="@font/alice"
                 />
             <TextView
                 android:id="@+id/dtodaydeath"
@@ -116,7 +120,7 @@
                 android:text="63526"
                 android:textSize="20dp"
                 android:textColor="#4D03FF"
-                android:fontFamily="@font/arimo_bold"
+                android:fontFamily="@font/alice"
                 android:layout_marginTop="5dp"
 
                 />
@@ -134,7 +138,7 @@
                 android:textSize="20dp"
                 android:textColor="#000"
                 android:layout_marginTop="5dp"
-                android:fontFamily="@font/arimo"
+                android:fontFamily="@font/alice"
                 />
             <TextView
                 android:id="@+id/dtotalactive"
@@ -144,7 +148,7 @@
                 android:text="63526"
                 android:textSize="20dp"
                 android:textColor="#4D03FF"
-                android:fontFamily="@font/arimo_bold"
+                android:fontFamily="@font/alice"
                 android:layout_marginTop="5dp"
 
                 />
@@ -162,7 +166,7 @@
                 android:textSize="20dp"
                 android:textColor="#000"
                 android:layout_marginTop="5dp"
-                android:fontFamily="@font/arimo"
+                android:fontFamily="@font/alice"
                 />
             <TextView
                 android:id="@+id/dtotalcritical"
@@ -172,7 +176,7 @@
                 android:text="63526"
                 android:textSize="20dp"
                 android:textColor="#4D03FF"
-                android:fontFamily="@font/arimo_bold"
+                android:fontFamily="@font/alice"
                 android:layout_marginTop="5dp"
 
                 />
@@ -190,7 +194,7 @@
                 android:textSize="20dp"
                 android:textColor="#000"
                 android:layout_marginTop="5dp"
-                android:fontFamily="@font/arimo"
+                android:fontFamily="@font/alice"
                 />
             <TextView
                 android:id="@+id/dtotaldeath"
@@ -200,12 +204,12 @@
                 android:text="63526"
                 android:textSize="20dp"
                 android:textColor="#4D03FF"
-                android:fontFamily="@font/arimo_bold"
+                android:fontFamily="@font/alice"
                 android:layout_marginTop="5dp"
 
                 />
         </RelativeLayout>
 
     </LinearLayout>
-
+</ScrollView>
 </RelativeLayout>

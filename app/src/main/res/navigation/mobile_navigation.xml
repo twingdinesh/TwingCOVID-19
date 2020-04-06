@@ -16,6 +16,11 @@
         android:name="com.twingdinesh.twingcovid_19.ui.country.CountryFragment"
         android:label="@string/title_country"
         tools:layout="@layout/fragment_country" />
-
+    <fragment
+        android:id="@+id/navigation_faq"
+        android:name="com.twingdinesh.twingcovid_19.ui.faq.FAQ"
+        android:label="FAQ"
+        tools:layout="@layout/f_a_q_fragment"
+        />
 
 </navigation>

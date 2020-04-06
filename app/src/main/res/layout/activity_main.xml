@@ -4,8 +4,9 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000"
+    android:background="#fff"
 >
+
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/nav_view"
@@ -18,7 +19,6 @@
         app:itemTextAppearanceActive="@style/BottomNavigationView"
         android:background="@color/colorPrimaryDark"
         app:menu="@menu/bottom_nav_menu" />
-
     <fragment
         android:id="@+id/nav_host_fragment"
         android:name="androidx.navigation.fragment.NavHostFragment"

@@ -10,5 +10,9 @@
         android:id="@+id/navigation_country"
         android:icon="@drawable/ic_dashboard_black_24dp"
         android:title="@string/title_country" />
+    <item
+        android:id="@+id/navigation_faq"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="FAQ" />
 
 </menu>

@@ -28,7 +28,7 @@ import java.util.Calendar;
 
 public class HomeFragment extends Fragment {
 
-    TextView Globalrecover,Globalaffected,Globaldeath,updatetime;
+    TextView Globalrecover,Globalaffected,Globaldeath,updatetime,Globalcritical;
     ProgressBar progressBar;
     Animation translate;
 
@@ -41,6 +41,7 @@ public class HomeFragment extends Fragment {
             Globaldeath=root.findViewById(R.id.GlobalTotalDeath);
             progressBar=root.findViewById(R.id.GlobalProgress);
             updatetime=root.findViewById(R.id.updatetime);
+            Globalcritical=root.findViewById(R.id.Globaltotalcritical);
             translate= AnimationUtils.loadAnimation(getActivity(),R.anim.zoom);
             getdata();
             root.setAnimation(translate);
@@ -66,7 +67,8 @@ public class HomeFragment extends Fragment {
                     Globalaffected.setText(jsonObject.getString("cases"));
                     Globaldeath.setText(jsonObject.getString("deaths"));
                     Globalrecover.setText(jsonObject.getString("recovered"));
-                    updatetime.setText("last updated"+"\n"+date(jsonObject.getLong("updated")));
+                    updatetime.setText("last updated "+date(jsonObject.getLong("updated")));
+                    Globalcritical.setText(jsonObject.getString("critical"));
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }

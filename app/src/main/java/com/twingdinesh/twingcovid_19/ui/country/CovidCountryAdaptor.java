@@ -4,6 +4,8 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -20,6 +22,7 @@ public class CovidCountryAdaptor extends RecyclerView.Adapter<CovidCountryAdapto
 
     ArrayList<Covidcountry> covidcountries;
     Context mcontext;
+    Animation anim;
 
 
     public CovidCountryAdaptor(ArrayList<Covidcountry> covidcountries,Context mcontext) {
@@ -30,6 +33,8 @@ public class CovidCountryAdaptor extends RecyclerView.Adapter<CovidCountryAdapto
     @Override
     public viewholder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.item_list_country,parent,false);
+        anim= AnimationUtils.loadAnimation(parent.getContext(),R.anim.countryaim);
+        view.setAnimation(anim);
         return new viewholder(view);
     }
 

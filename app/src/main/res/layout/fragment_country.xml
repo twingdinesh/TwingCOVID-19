@@ -4,18 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#C3CBFD"
+    android:background="#fff"
     tools:context=".ui.country.CountryFragment">
+
         <TextView
             android:id="@+id/totalcountry"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="204 countries"
-            android:textColor="#000"
-            android:textSize="35sp"
             android:layout_alignParentTop="true"
+            android:layout_marginTop="-1dp"
+            android:text="204 countries"
             android:textAlignment="center"
-            />
+            android:fontFamily="@font/alice"
+            android:textColor="#000"
+            android:textSize="35sp" />
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerview"
             android:layout_width="match_parent"

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardPreventCornerOverlap="true"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="5sp"
+    app:cardBackgroundColor="#fff"
+    app:cardUseCompatPadding="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/faqQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:fontFamily="@font/alice"
+        android:text="Should I keep using grocery delivery services ... and ride-hailing companies … and restaurants?"
+        android:textColor="#4A148C"
+        />
+    <TextView
+        android:id="@+id/faqAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Hasbrouck encourages those who have access to services such as Postmates, Grubhub, Lyft, and Instacart to use them. “It’s a good way to social distance,” he says, noting that two main factors when it comes to Covid-19 transmission are closeness of contact and duration. “The handoff is five seconds, you go inside and wash your hands. Or just have them leave it at your doorstep.” (Instacart, Uber Eats, and other delivery services are offering contactless delivery.)"
+        android:textColor="#000"
+        android:layout_marginTop="5sp"
+        android:fontFamily="@font/alice"
+        />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
