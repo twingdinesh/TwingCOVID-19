@@ -4,7 +4,7 @@ This app will show the datum who are affected by covid19
 it shows globally and country wise datas
 
 it shows 
-totally affected
+totally affected \n
 total dead
 today dead
 today affected
