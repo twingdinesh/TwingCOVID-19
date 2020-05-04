@@ -5,9 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingTop="200sp"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:background="@drawable/detailscountrybg"
+    android:paddingLeft="16sp"
+    android:paddingRight="16sp"
+    android:background="@mipmap/detailscountrybg"
     tools:context=".countrydetails">
 
 
@@ -19,7 +19,7 @@
         android:text="india"
         android:textColor="#000"
         android:layout_centerHorizontal="true"
-        android:textSize="35dp" />
+        android:textSize="35sp" />
 
     <TextView
         android:id="@+id/detailtotal"
@@ -28,15 +28,15 @@
         android:layout_below="@+id/detailcountryname"
         android:text="20097"
         android:textColor="#FF0303"
-        android:textSize="35dp"
+        android:textSize="35sp"
         android:fontFamily="@font/alice"
         android:layout_centerHorizontal="true"
         />
-<ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_below="@+id/detailtotal">
+
     <LinearLayout
+        android:padding="5sp"
+        android:layout_marginBottom="20sp"
+        android:layout_below="@id/detailtotal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -44,16 +44,16 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp">
+            android:layout_marginTop="5sp">
             <TextView
                 android:id="@+id/totalrecoverdlable"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:text="Total recoverd :"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textColor="#000"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="5sp"
                 android:fontFamily="@font/alice"
                 />
             <TextView
@@ -62,26 +62,26 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:text="63526"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textColor="#4D03FF"
                 android:fontFamily="@font/alice"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="5sp"
 
                 />
         </RelativeLayout>
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp">
+            android:layout_marginTop="5sp">
             <TextView
                 android:id="@+id/lable2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:text="Today's cases :"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textColor="#000"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="5sp"
                 android:fontFamily="@font/alice"
                 />
             <TextView
@@ -90,26 +90,26 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:text="63526"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textColor="#4D03FF"
                 android:fontFamily="@font/alice"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="5sp"
 
                 />
         </RelativeLayout>
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp">
+            android:layout_marginTop="5sp">
             <TextView
                 android:id="@+id/lable3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:text="Today's deaths :"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textColor="#000"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="5sp"
                 android:fontFamily="@font/alice"
                 />
             <TextView
@@ -118,26 +118,26 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:text="63526"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textColor="#4D03FF"
                 android:fontFamily="@font/alice"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="5sp"
 
                 />
         </RelativeLayout>
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp">
+            android:layout_marginTop="5sp">
             <TextView
                 android:id="@+id/lable4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:text="Total active :"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textColor="#000"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="5sp"
                 android:fontFamily="@font/alice"
                 />
             <TextView
@@ -146,26 +146,26 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:text="63526"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textColor="#4D03FF"
                 android:fontFamily="@font/alice"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="5sp"
 
                 />
         </RelativeLayout>
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp">
+            android:layout_marginTop="5sp">
             <TextView
                 android:id="@+id/lable5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:text="Total critcal :"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textColor="#000"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="5sp"
                 android:fontFamily="@font/alice"
                 />
             <TextView
@@ -174,26 +174,26 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:text="63526"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textColor="#4D03FF"
                 android:fontFamily="@font/alice"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="5sp"
 
                 />
         </RelativeLayout>
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp">
+            android:layout_marginTop="5sp">
             <TextView
                 android:id="@+id/lable6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:text="Total death :"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textColor="#000"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="5sp"
                 android:fontFamily="@font/alice"
                 />
             <TextView
@@ -202,14 +202,13 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:text="63526"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textColor="#4D03FF"
                 android:fontFamily="@font/alice"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="5sp"
 
                 />
         </RelativeLayout>
 
     </LinearLayout>
-</ScrollView>
 </RelativeLayout>

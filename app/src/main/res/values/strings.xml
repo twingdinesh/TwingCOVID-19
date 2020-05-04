@@ -1,8 +1,9 @@
 <resources>
-    <string name="app_name">TwingCOVID-19</string>
+    <string name="app_name">COVID19 LIVE TRACKER</string>
     <string name="title_home">Home</string>
     <string name="title_country">Country</string>
-
+    <string name="open">Country</string>
+    <string name="close">Country</string>
 
 
 </resources>

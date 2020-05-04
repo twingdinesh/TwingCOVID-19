@@ -3,6 +3,7 @@ package com.twingdinesh.twingcovid_19.ui.country;
 import android.content.Intent;
 import android.os.Bundle;
 
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -69,7 +70,7 @@ public class CountryFragment extends Fragment {
         startActivity(intent);
     }
     private void getdata() {
-            String url="https://corona.lmao.ninja/countries";
+            String url="https://corona.lmao.ninja/v2/countries";
            covidcountries=new ArrayList<>();
         StringRequest stringRequest=new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
             @Override
@@ -92,6 +93,8 @@ public class CountryFragment extends Fragment {
                     ItemClickSupport.addTo(recyclerView).setOnItemClickListener(new ItemClickSupport.OnItemClickListener() {
                         @Override
                         public void onItemClicked(RecyclerView recyclerView, int position, View v) {
+
+
                             Covidcountry covid=covidcountries.get(position);
 
 

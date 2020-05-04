@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:title="twingdinesh"
+        android:id="@+id/contact"
+        android:title="contact us"
+        android:icon="@drawable/contact"
         />
     <item
-        android:title="9384336255"
+        android:id="@+id/privacypolicy"
+        android:title="privacy policy"
+        android:icon="@drawable/common_full_open_on_phone"
+        />
+
+    <item
+        android:id="@+id/rateus"
+         android:title="rate us"
+        android:icon="@drawable/rate"
         />
 
 </menu>

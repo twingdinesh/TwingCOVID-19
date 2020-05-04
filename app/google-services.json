@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "577899999096",
+    "firebase_url": "https://twingcovid-19.firebaseio.com",
+    "project_id": "twingcovid-19",
+    "storage_bucket": "twingcovid-19.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:577899999096:android:86c4fa605800d9ab61a28d",
+        "android_client_info": {
+          "package_name": "com.twingdinesh.twingcovid_19"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "577899999096-8uicq3cte5akl3m257rqcv8q51raehsh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.twingdinesh.twingcovid_19",
+            "certificate_hash": "8b746f9b1f78bb2d0e5f155557a96cac67444af6"
+          }
+        },
+        {
+          "client_id": "577899999096-o92152o4pvljdfi1shor15naj7dd9lap.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhxz6Ez3MnFvuj8dgEPoPrfK7Dr2PDHEQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "577899999096-o92152o4pvljdfi1shor15naj7dd9lap.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

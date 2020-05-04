@@ -3,17 +3,14 @@ package com.twingdinesh.twingcovid_19;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.view.View;
+
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.widget.ProgressBar;
+
 import android.widget.TextView;
 
-import com.twingdinesh.twingcovid_19.ui.country.Covidcountry;
-
-import org.w3c.dom.Text;
-
 public class countrydetails extends AppCompatActivity {
+
     TextView dcountryname,dtotalcase,dtotalrecoverd,dtodaycase,dtotaldeath,dtodaydeath,dtotalcritical,dtotalactive,totalrecoverdlable,lab2,lab3,lab4,lab5,lab6;
     Animation left,right;
     @Override
@@ -29,6 +26,7 @@ public class countrydetails extends AppCompatActivity {
         dtotalcritical=(TextView)findViewById(R.id.dtotalcritical);
         dtotalactive=(TextView)findViewById(R.id.dtotalactive);
         totalrecoverdlable=(TextView)findViewById(R.id.totalrecoverdlable);
+
         lab2=(TextView)findViewById(R.id.lable2);
         lab3=(TextView)findViewById(R.id.lable3);
         lab4=(TextView)findViewById(R.id.lable4);
@@ -55,7 +53,6 @@ public class countrydetails extends AppCompatActivity {
         dtotalcritical.setAnimation(left);
         dtotalactive.setAnimation(left);
         dtotaldeath.setAnimation(left);
-
         totalrecoverdlable.setAnimation(right);
         lab2.setAnimation(right);
         lab3.setAnimation(right);

@@ -57,7 +57,7 @@ public class HomeFragment extends Fragment {
     private void getdata() {
 
         RequestQueue queue= Volley.newRequestQueue(getActivity());
-        String url="https://corona.lmao.ninja/all";
+        String url="https://corona.lmao.ninja/v2/all";
         StringRequest stringRequest=new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {

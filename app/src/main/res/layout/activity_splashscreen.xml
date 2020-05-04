@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".splashscreen">
+        <ImageView
+            android:id="@+id/twinglogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/twinglogo"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+
+            />
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter name"
+            android:textAlignment="center"
+            android:textColor="#B1185B"
+            android:fontFamily="@font/alice"
+            android:textColorHint="#B1185B"
+            android:layout_below="@+id/twinglogo"
+                />
+        <Button
+            android:id="@+id/explore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="explore"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:layout_marginTop="8sp"
+            android:fontFamily="@font/alice"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/username"
+            android:background="@drawable/buttonbg"
+
+                />
+</RelativeLayout>
