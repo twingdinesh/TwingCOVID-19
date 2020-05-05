@@ -28,4 +28,10 @@
         android:label="safety"
         tools:layout="@layout/fragment_safty"
         />
+    <fragment
+        android:id="@+id/navigation_india"
+        android:name="com.twingdinesh.twingcovid_19.ui.india.india"
+        android:label="india"
+        tools:layout="@layout/fragment_india"
+        />
 </navigation>

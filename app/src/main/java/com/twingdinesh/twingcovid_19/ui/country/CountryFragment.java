@@ -17,6 +17,7 @@ import androidx.annotation.NonNull;
 
 import androidx.fragment.app.Fragment;
 
+import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -41,7 +42,6 @@ public class CountryFragment extends Fragment {
     ProgressBar progressBar;
     Animation countryanim;
     ArrayList<Covidcountry> covidcountries;
-
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
@@ -49,6 +49,8 @@ public class CountryFragment extends Fragment {
         recyclerView=root.findViewById(R.id.recyclerview);
         progressBar=root.findViewById(R.id.CountryProgress);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+        recyclerView.addItemDecoration(new DividerItemDecoration(getContext(),
+                DividerItemDecoration.VERTICAL));
         getdata();
         countryanim=AnimationUtils.loadAnimation(getActivity(),R.anim.righttoleft);
         root.setAnimation(countryanim);
