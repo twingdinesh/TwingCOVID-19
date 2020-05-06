@@ -4,6 +4,9 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 
 import androidx.fragment.app.Fragment;
@@ -29,16 +32,19 @@ public class india extends Fragment {
     private RecyclerView staterv;
     private ProgressBar progressBar;
     private ArrayList<indiahelperclass> arrayList;
+    private LinearLayout linearLayout;
+    Animation animation;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View root=inflater.inflate(R.layout.fragment_india, container, false);
         staterv=root.findViewById(R.id.rvindia);
+        linearLayout=root.findViewById(R.id.linearlayout);
         progressBar=root.findViewById(R.id.progressbar_india);
         staterv.setLayoutManager(new LinearLayoutManager(getActivity()));
-//        staterv.addItemDecoration(new DividerItemDecoration(getContext(),
-//                DividerItemDecoration.VERTICAL));
+        animation= AnimationUtils.loadAnimation(getActivity(),R.anim.indiaanim);
+        linearLayout.setAnimation(animation);
         getdata();
         return root;
     }

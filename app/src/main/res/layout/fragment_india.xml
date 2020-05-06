@@ -4,17 +4,77 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.india.india">
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvindia"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        >
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="8sp"
+        android:paddingLeft="16sp"
+        android:paddingRight="16sp"
+        android:layout_alignParentTop="true"
+        android:weightSum="6"
+        >
+        <TextView
+            android:id="@+id/statename"
+            android:layout_width="95sp"
+            android:layout_height="wrap_content"
+            android:text="STATE"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_weight="3"
+            android:fontFamily="@font/arimo_bold"
+            />
+        <TextView
+            android:id="@+id/activestate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CASES"
+            android:textSize="16sp"
+            android:textColor="#0027FA"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:fontFamily="@font/arimo_bold"
+            />
+        <TextView
+            android:id="@+id/recoverstate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RECVOVER"
+            android:textSize="16sp"
+            android:textColor="#319A00"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:fontFamily="@font/arimo_bold"
+            />
+        <TextView
+            android:id="@+id/deadstate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DEAD"
+            android:textSize="16sp"
+            android:textColor="#FF0000"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:fontFamily="@font/arimo_bold"
+            />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/linearlayout"
+        android:id="@+id/rvindia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         tools:listitem="@layout/indiastatecardview"
         />
     <ProgressBar
         android:id="@+id/progressbar_india"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:layout_centerInParent="true"
         />
+    </RelativeLayout>
 </FrameLayout>

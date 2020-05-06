@@ -1,12 +1,10 @@
 package com.twingdinesh.twingcovid_19;
 
 import android.content.DialogInterface;
-
+import android.content.res.ColorStateList;
+import android.os.Build;
 import android.os.Bundle;
-
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-
-
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -26,7 +24,9 @@ public class MainActivity extends AppCompatActivity {
         // menu should be considered as top level destinations.
 
 
-        navView.setItemIconTintList(null);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            navView.setItemIconTintList(ColorStateList.valueOf(getColor(R.color.white)));
+        }
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupWithNavController(navView, navController);
     }

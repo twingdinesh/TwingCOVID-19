@@ -1,13 +1,10 @@
 <resources>
-    <string name="app_name">COVID19 LIVE TRACKER</string>
+    <string name="app_name">Twing COVID19 LIVE TRACKER</string>
     <string name="title_home">Home</string>
     <string name="title_country">Country</string>
     <string name="open">Country</string>
     <string name="close">Country</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="india">India</string>
-
 
 </resources>
